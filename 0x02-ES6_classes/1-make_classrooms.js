@@ -1,7 +1,6 @@
 import ClassRoom from './0-classroom';
 
-export function initializeRooms() {
-  const roomSizes = [19, 20, 34];
-  const rooms = roomSizes.map((size) => new ClassRoom(size));
+export default function initializeRooms() {
+  const rooms = [new ClassRoom(19), new ClassRoom(20), new ClassRoom(34)];
   return rooms;
 }
